@@ -1,0 +1,152 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>The Coffee Club</title>
+    <link rel="stylesheet" href="estilocooffee.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <meta name="viewport"content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+</head>
+<body>
+    <nav class="navv">
+        <a href="#" class="logo">
+            <img src="log4.png" alt="logo del coffee">
+            <h2 class="nombre-empresa">THE COFFEE CLUB</h2>
+        </a>
+        <!--menu hamburguesa-->
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#INICIO">INICIO</a></li>
+            <li><a href="#SERVICIOS">SERVICIOS</a></li>
+            <li><a href="index_ubi.html">UBICACIÓN</a></li>
+            <li><a href="#CONOCENOS">CONOCENOS</a></li>
+            <li><a href="#CONTACTOS">CONTACTOS</a></li>
+        </ul>
+        <button id="boton">Modo Oscuro</button>
+    </nav>
+
+    <main>
+        <!-- Secciones de contenido anteriores (INICIO, SERVICIOS, CONÓCENOS) -->
+
+        <section id="INICIO">
+            <h1>¡Bienvenido a The Coffee Club! </h1>
+            <p>En The Coffee Club, cada taza de café es una experiencia única. Disfruta de nuestros granos seleccionados y tostados con precisión en un ambiente acogedor.</p>
+        </section>
+       
+           <article class="servicios"> 
+            <section id="SERVICIOS">
+           <h2>Nuestros servicios</h2>
+           </section>
+            <div class="contenedor-tarjetas">
+       
+               <div class="tarjeta">
+                   <img src="brunch1.jpeg" alt="Imagen PNG">
+                   <h3>BRUNCH </h3>
+                 <p>Disfruta del brunch perfecto en The Coffee Club. Platos gourmet y café de especialidad te esperan en un ambiente único y acogedor. ¡Haz de cada mañana algo especial! </p>
+                 <button onclick="window.location.href='pagina_brunch.html'">Acceder</button>
+                  
+                 </div>
+             
+                 <div class="tarjeta">
+                   <img src="cafe1.jpeg" alt="Imagen PNG">
+                   <h3>COFFEE</h3>
+                   <p>¡Para los amantes del caffe tenemos una variedad de opciones!</p>
+                   <button onclick="window.location.href='pagina_brunch.html'">Acceder</button>
+                 </div>
+       
+                 <div class="tarjeta">
+                   <img src="lunch1.jpeg" alt="Imagen PNG">
+                   <h3>LUNCH</h3>
+                   <p>Disfruta de un lunch único en The Coffee Club. Platos frescos y cuidadosamente preparados con el mejor café de especialidad, ideal para tu pausa del mediodía.</p>
+                   <button onclick="window.location.href='pagina_brunch.html'">Acceder</button>
+                 </div>
+               </div>
+           </article>
+
+           <article  id="CONOCENOS" class="CONOCENOS">
+            <h2>CONÓCENOS:</h2>
+            <p>En The Coffee Club, creemos que cada taza de café es una oportunidad para crear momentos inolvidables. Nuestra historia comenzó en 2020, se decidió abrir un espacio donde las personas pudieran disfrutar de un buen momento. Desde entonces, hemos crecido y evolucionado, pero nuestra misión sigue siendo la misma: ofrecer una experiencia de café excepcional en un ambiente acogedor y relajante.</p>
+              
+            
+            <h3>Nuestros Valores:</h3>
+              <ul>
+                <li>Calidad: Nos comprometemos a ofrecer productos de la más alta calidad.</li>
+                <li>Sostenibilidad: Trabajamos con proveedores que practican la agricultura sostenible.</li>
+                <li>Comunidad: Creemos en apoyar a nuestra comunidad local y en crear un espacio acogedor para todos.</li>
+            </ul>
+          
+            <h3>Nuestros Logros:</h3>
+            <ul>
+              <li>Ganadores del premio “Mejor Cafetería Local” en 2023.</li>
+              <li>Certificación de Comercio Justo y Sostenibilidad.</li>
+              <li>Más de 15,000 clientes satisfechos.</li>
+            </ul>
+           
+            <h3>Nuestro Espacios:</h3>
+            <p>En The Coffee Club, ofrecemos una variedad de espacios para que disfrutes de tu café:</p>
+            <ul>
+              <li>Zona de Trabajo: Un área tranquila con Wi-Fi gratuito y enchufes para que puedas trabajar cómodamente.</li>
+              <li>Zona de Relajación: Sofás y sillones cómodos donde puedes relajarte y disfrutar de un buen libro o una conversación.</li>
+              <li>Terraza al Aire Libre: Un espacio al aire libre perfecto para disfrutar de tu café en los días soleados.</li>
+            </ul>
+            </article>
+            </section>
+
+
+        <section id="encuesta">
+            <h3>Encuesta de Satisfacción</h3>
+            <form>
+                <label for="satisfaction">¿Qué tan satisfecho estás con nuestro servicio?</label>
+                <select id="satisfaction">
+                    <option value="muy_satisfecho">Muy satisfecho</option>
+                    <option value="satisfecho">Satisfecho</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="insatisfecho">Insatisfecho</option>
+                    <option value="muy_insatisfecho">Muy insatisfecho</option>
+                </select>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section id="CONTACTOS">
+            <article class="contactos">
+                <h3>CONTACTOS:</h3>
+                <p>Estamos ubicados en la Calle Rivadavia 3050.</p>
+                <ul>
+                    <li>Instagram: @TheCoffeeClub_Oficial</li>
+                    <li>WhatsApp: 226666XXXX</li>
+                    <li>Email: thecoffeeclub@hotmail.com</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 The Coffee Club</p>
+        <div class="social-icons">
+            <a href="https://instagram.com"><img src="ig_logo.png" alt="Instagram"></a>
+            <a href="https://facebook.com"><img src="face_logo.png" alt="Facebook"></a>
+            <a href="mailto:thecoffeeclub@hotmail.com"><img src="mail.webp" alt="Email"></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

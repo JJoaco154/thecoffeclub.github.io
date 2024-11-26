@@ -1,0 +1,382 @@
+/*Estilos generales */
+body {
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+    font-weight: 100; /* Grosor de la letra*/ 
+    font-style: normal;  /*Aspecto de la tipografía */
+}
+
+/* Estilos para el header /* Estilos generales */
+body {
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    background-color: #f2f2f2;
+}
+
+/* Estilos para el header */
+header {
+    background-color: rgb(69, 151, 100);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+/*.navv {
+    display: flex;
+    background-color: rgb(69, 151, 100);
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.nombre-empresa {
+    font-family: "Shadows Into Light", cursive;
+    font-size: 18px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 80px;
+    margin-right: 5px;
+}*/
+
+.navv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.navv .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navv .logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+#boton {
+    padding: 5px 10px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilos del menú hamburguesa */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+/* Responsividad del navv*/
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #333;
+        width: 200px;
+        border-radius: 5px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+/* Estilos para los enlaces */
+a {
+    text-decoration: none;
+    color: rgb(230, 228, 210);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(237, 234, 212);
+}
+
+nav a:hover {
+    color: rgb(235, 159, 8);
+}
+
+/* Modo claro (predeterminado) */
+nav, article, button, #encuesta, footer {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Modo oscuro */
+.dark-mode nav,
+.dark-mode article,
+.dark-mode button,
+.dark-mode #encuesta,
+.dark-mode footer {
+    background-color: #333;
+    color: #fff;
+}
+
+
+/* Cambiar color del borde y fondo del select en modo oscuro */
+.dark-mode select {
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+
+/* Estilos para las tarjetas */
+.tarjeta {
+    max-width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #dfe2c9;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.tarjeta img {
+    width: 100%;
+}
+
+.tarjeta h3 {
+    color: cadetblue;
+}
+
+.tarjeta p {
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.5;
+}
+
+/* Layout de tarjetas en grilla responsiva */
+.contenedor-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .contenedor-tarjetas {
+        grid-template-columns: 1fr;
+    }
+    header, .navv {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+/* Estilos para los textos */
+h1, h2, h3, p {
+    margin: 1rem;
+    font-size: 1.2rem;
+}
+
+button {
+    font-size: 1rem;
+}
+
+header {
+    background-color: rgb(69, 151, 100);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.navv {
+    background-color: rgb(69, 151, 100);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.nombre-empresa {
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* Modo claro (por defecto) */
+body {
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+    background-color: #f2f2f2;
+    color: #000;
+}
+
+/* Modo oscuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #f2f2f2;
+}
+
+#boton {
+    background: none;
+    border: 1px solid #333;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.conocenos {
+
+    font-family: 'Roboto', sans-serif;
+    max-width: 1500px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #f9f9f9;
+    box-shadow: rgba(241, 230, 25, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+/* Estilos para la encuesta */
+#encuesta {
+    padding: 20px;
+    background-color: #e6e6e6;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(69, 151, 100);
+    color: white;
+}
+
+.social-icons img {
+    width: 70px;
+    margin: 45px;
+}
+
+.contactos {
+    font-family: 'Roboto', sans-serif;
+    max-width: 1500px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #f9f9f9;
+    box-shadow: rgba(247, 120, 1, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+
+
+/* Estilos generales */
+.postres, .cafe, .comida {
+    padding: 20px;
+    display: flex;
+    gap: 60px; /* Aumentamos el espacio entre tarjetas */
+    flex-wrap: wrap;
+}
+
+.tarjeta0, .tarjeta1, .tarjeta2, .tarjeta4, .tarjeta5, .tarjeta6, .tarjeta7, .tarjeta8 {
+    width: 200px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px; /* Espacio extra alrededor de cada tarjeta */
+}
+
+img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.contenedor2-tarjetas, .contenedor3-tarjetas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para la sección de Postres */
+.postres {
+    background-color: #e0b3ff; /* Fondo lila */
+}
+
+/* Estilos para la sección de Café */
+.cafe {
+    background-color: #d2b48c; /* Fondo marrón claro */
+}
+
+/* Estilos para la sección de Comidas */
+.comida {
+    background-color: #ffcc99; /* Fondo rojo amarillento */
+}
+
+
+
+
